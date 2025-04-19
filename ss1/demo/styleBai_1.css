@@ -1,0 +1,103 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Căn lên đầu trang */
+  min-height: 100vh;
+  padding-top: 50px; /* Khoảng cách từ đầu trang */
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px; /* Giới hạn chiều rộng tối đa */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa input và button */
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex-grow: 1; /* Cho input chiếm hết phần còn lại */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#addTaskBtn {
+  padding: 10px 15px;
+  background-color: #5cb85c; /* Màu xanh lá */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+#addTaskBtn:hover {
+  background-color: #4cae4c;
+}
+
+#taskList {
+  list-style: none; /* Bỏ dấu chấm đầu dòng */
+}
+
+#taskList li {
+  background-color: #eee;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between; /* Đẩy nút xóa sang phải */
+  align-items: center;
+  cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua */
+  transition: background-color 0.2s ease;
+}
+
+#taskList li:hover {
+  background-color: #ddd;
+}
+
+/* Định dạng cho công việc đã hoàn thành */
+#taskList li.completed span {
+  text-decoration: line-through; /* Gạch ngang chữ */
+  color: #888; /* Màu xám */
+}
+
+/* Nút xóa */
+.delete-btn {
+  background-color: #d9534f; /* Màu đỏ */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px; /* Khoảng cách với nội dung công việc */
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
