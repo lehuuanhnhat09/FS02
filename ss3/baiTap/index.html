@@ -37,10 +37,13 @@
         </div>
       </header>
       <section>
-        <h1>Contact us</h1>
-        <p>Need an experienced and skilled hand with custom IT projects?</p>
-        <p>Fill out the form to get a free consultation.</p>
         <div class="information">
+          <h1>Contact us</h1>
+          <p>
+            Need an experienced and skilled hand with custom IT projects? <br />
+            Fill out the form to get a free consultation.
+          </p>
+
           <label for="company-name" class="label">Your Company Name</label
           ><br />
           <hr />
@@ -49,13 +52,17 @@
           ><br />
           <hr />
           <input type="text" id="business-nature" class="input" /><br />
-          <div class="adress">
-            <label for="address" class="label">Address</label><br />
-            <hr />
-            <input type="text" id="address" class="input" /><br />
-            <label for="postcode" class="label">Postcode</label><br />
-            <hr />
-            <input type="text" id="postcode" class="input" /><br />
+          <div class="address">
+            <div class="container-address">
+              <label for="address" class="label">Address</label>
+              <hr />
+              <input type="text" id="address" class="input" /><br />
+            </div>
+            <div class="container-postcode">
+              <label for="postcode" class="label">Postcode</label><br />
+              <hr />
+              <input type="text" id="postcode" class="input" /><br />
+            </div>
           </div>
           <label for="contact-name" class="label">Contact name</label><br />
           <hr />
@@ -101,10 +108,17 @@
                 <span>Upload Additional File</span>
               </div>
             </label>
-            <input type="file" id="file-upload" class="file-input" />
             <p class="upload-note">
               Attach file. File size of your documents should not exceed 10MB
             </p>
+            <input type="file" id="file-upload" class="file-input" />
+            <button type="button">SUBMIT</button>
+          </div>
+          <div class="selection-control">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >I want to protect my data by signing an NDA</label
+            >
           </div>
         </div>
         <div class="container2">
