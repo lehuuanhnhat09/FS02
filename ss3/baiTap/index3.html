@@ -874,15 +874,104 @@
         </div>
       </div>
       <div class="categories-section">
-        <h2>
-          Categories
-        </h2>
-        <button type="button" class="categories-list " title="categories-list">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        <div>
+          <h2>
+            Categories
+          </h2>
+          <button type="button" class="categories-list " title="categories-list">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </button>
+        </div>
+        <div class="search-box-categories-section">
+          <input type="search" title="search-box" placeholder="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
           </svg>
-        </button>
+        </div>
+        <ul class="categories-list">
+          <li class="category-item">
+            <input type="checkbox" id="checkbox" title="checkbox">
+            <label for="checkbox" class="category-label" >Fruit & Vegetables</label>
+            <span class="category-count">(15)</span>
+          </li>
+        </ul>
+        <ul class="categories-list">
+          <li class="category-item">
+            <input type="checkbox" id="checkbox" title="checkbox">
+            <label for="checkbox" class="category-label" >Bakery, Cake & Dairy</label>
+            <span class="category-count">(12 )</span>
+          </li>
+        </ul>
+        <ul class="categories-list">
+          <li class="category-item">
+            <input type="checkbox" id="checkbox" title="checkbox">
+            <label for="checkbox" class="category-label" >Beverages</label>
+            <span class="category-count">(20)</span>
+          </li>
+        </ul>
+        <ul class="categories-list">
+          <li class="category-item">
+            <input type="checkbox" id="checkbox" title="checkbox">
+            <label for="checkbox" class="category-label" >Snacks & Branded...</label>
+            <span class="category-count">(05)</span>
+          </li>
+        </ul>
+        <ul class="categories-list">
+          <li class="category-item">
+            <input type="checkbox" id="checkbox" title="checkbox">
+            <label for="checkbox" class="category-label" >Beauty & Household</label>
+            <span class="category-count">(30)</span>
+          </li>
+        </ul>
       </div>
+      <div class="food-preference-section">
+        <div class="food-preference-header">
+          <h2>Food Preference</h2>
+          <div class="food-preference-toggle-btn">
+            <button title="food-preference-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="food-preference-list">
+          <ul class="food-preference">
+            <li class="food-reference-item">
+              <input type="checkbox" title="checkbox" id="checkbox">
+              <label for="checkbox" class="food-preference-label">Vegetarian</label>
+              <span class="food-preference-count">(08)</span>
+            </li>
+          </ul>
+          <ul class="food-preference">
+            <li class="food-reference-item">
+              <input type="checkbox" title="checkbox" id="checkbox">
+              <label for="checkbox" class="food-preference-label">Non Vegetarian</label>
+              <span class="food-preference-count">(09)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="price-section">
+        <div class="price-section-header">
+          <h2>Price</h2>
+          <button class="price-toggle-btn" title="price-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </button>
+        </div>
+        <div class="price-slider">
+          <input type="range" title="range-price" min="$0" max="$1000000">
+        </div>
+        <div class="price-slider-value">
+          <span class="price-slider-min">$0</span>
+          <span class="price-slider-max">$1000000</span>
+        </div>
+      </div>
+
     </aside>
   </body>
 </html>
